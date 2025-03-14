@@ -1,0 +1,254 @@
+:root {
+    
+    --DeepBlue:#1A385A;
+    --SurfBlue:#769ABE;
+    --OrangeRed:#E46F44;
+    --LawnGreen:#E8AA9B;
+    --FaintGray:#DCD5DC;
+  }
+
+
+
+body {
+    background-image: url('images/background_img.jpg');
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+
+
+}
+
+
+nav {
+    background-color:var(--DeepBlue);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--FaintGray);
+    
+    
+  }
+
+  nav a {    
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+  }
+  
+  nav  a:hover {
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    /* padding: 0; */
+  }
+
+  .logo{
+    min-width: 20px;
+    max-width: 40px;
+    margin: -10px 0px;
+    cursor: pointer;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  button{
+    background-color: var(--SurfBlue);
+    border-radius: 5px;
+    padding: 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .headerbuttons{
+    background-color: white;      
+    border-radius: 20px;
+    display: flex;
+    padding: 10px;
+    gap: 15px;  
+  }
+
+  .headerbuttons input{
+    width: 170px;
+    font-size: .7rem;
+    border: none;
+    
+  }
+  .headerbuttons i{
+    color: var(--SurfBlue);
+    margin: 10px 0;
+    pointer-events: none;
+    
+  }
+
+  ::placeholder {
+    color: var(--SurfBlue);
+    opacity: 1; /* Firefox */
+    font-size: .7em;
+  }
+
+  .headerbuttons button{
+    font-size: .7rem;
+    padding: 10px;
+    border-radius: 12px;
+    
+
+  }
+  .intro{
+    margin: 150px;
+    flex:1;
+  }
+
+  .intro h1{
+    color: white;
+    font-size: 60px;
+    font-weight:bold;
+    text-shadow: 3px 3px #000;
+  }
+
+  .intro p{
+    color: white;
+    font-size: 1rem;    
+    line-height: 1.5;
+  }
+
+  .bookbtn{
+    margin: 20px 0;
+  }
+
+  /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0px 20px;
+  }
+  
+/* Style the icon bar links */
+.icon-bar a {
+display: block;
+text-align: center;
+padding: 8px;
+transition: all 0.3s ease;
+color: white;
+font-size: 20px;
+}
+
+.about h1{
+  color: white;
+  font-size: 60px;
+  font-weight:bold;
+  text-shadow: 3px 3px #000;
+}
+
+.about{
+  margin: 20px 100px;  
+  width:500px;
+}
+
+.about p{
+  color: black;
+  font-size: 1rem;
+  width: 500px;
+  line-height: 1.5;
+  
+}
+
+.teamBox{
+    display: flex;
+    max-width: 600px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--FaintGray);;
+    margin: 20px 100px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    
+}
+
+
+.teamBox img{
+    max-width: 70px;
+}
+
+.teamBox p{
+    margin-top: -15px;
+}
+
+.contactBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--FaintGray);
+    width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.submitbtn{
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+
+.form-div {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.form-div label {
+  width: 80px;
+  font-weight: bold;
+}
+
+.form-div input,
+.form-div textarea {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.form-div textarea {
+    resize: none;
+    height: 80px;
+}
+
+.mainflex{
+  display: flex;
+}
+
+#result{
+  margin: 20px;
+  padding: 10px;
+  border-radius: 15px;
+  width:500px;
+  
+  
+  
+}
+
+#result img{
+  max-width: 500px;
+  margin: 5px auto;
+  
+  
+}
+
+.navWithoutSearch{
+  visibility: hidden;
+}
